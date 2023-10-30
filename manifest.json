@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter Unfollow",
+    "version": "1.0",
+    "description": "Nuke following from twitter.",
+    "content_scripts" : [
+        {
+            "js" : ["unfollow.js"],
+            "matches" : [
+                "https://twitter.com/*/following"
+            ]
+        }
+    ]
+  }
